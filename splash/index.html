@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>The Standard Candle</title>
+		<style>
+			@font-face {
+			    font-family: 'Regina Black Solid';
+			    src: url('regina-solid.otf');
+			}
+
+			@font-face {
+			    font-family: 'Regina Black Hilite';
+			    src: url('regina-hilite.otf');
+			}
+
+			@font-face {
+			    font-family: 'Circular';
+			    src: url('circular.ttf');
+			}
+
+			@font-face {
+			    font-family: 'Utopia';
+			    src: url('utopia.ttf');
+			}
+
+			@font-face {
+			    font-family: 'Utopia Italic';
+			    src: url('utopia-italic.ttf');
+			}
+
+			body {
+				margin: 0;
+				background: #e8e4dd;
+			}
+
+			h1 {
+				font: normal 3em "Regina Black Solid", serif;
+				letter-spacing: 0.02em;
+				color: #333;
+			}
+
+			p {
+				font: normal 1.3em/1.8em "Circular", sans-serif;
+				color: #56534f;
+			}
+
+			a, a:active, a:visited {
+				text-decoration: none;
+				color: #000;
+			}
+
+				a.ben { color: #e48a07; }
+				a.jen { color: #f25f6d; }
+
+			.emoji {
+			    width: 1.3em;
+			    height: 1.3em;
+			    display: inline-block;
+			    margin-bottom: -0.35em;
+			}
+
+			#wrapper {
+				position: relative;
+				padding: 20px;
+			}
+
+			.tsc {
+				display: inline;
+				font: normal 1.3em/1.8em "Circular", sans-serif;
+			}
+
+			#tsc-box { display: none; }
+
+			img.novas {
+				display: block;
+				margin: auto;
+				width: 125px;
+			}
+
+			@media screen 
+				and (min-device-width: 480px) 
+				and (min-width: 480px) {
+
+					#wrapper {
+						width: 68%;
+						max-width: 630px;
+						margin: 6vh auto;
+						padding: 1em 2em;
+						border: 2px dotted #d3cec7;
+					}
+
+						#wrapper p { max-width: 620px; }
+
+					img.novas {
+						margin: 40px auto -40px;
+					}
+			}
+
+			@media screen 
+				and (min-device-width: 840px) 
+				and (min-width: 840px) {
+
+					.tsc {
+						color: #027079;
+						border-bottom: 1px dotted #027079;
+					}
+
+						#tsc-box {
+							display: none;
+							position: absolute;
+							top: 38%;
+							right: -190px;
+							width: 190px;
+							padding: 20px;
+							background: #fff;
+							font: normal 0.85em/1.5em "Circular", sans-serif;
+							border: 1px solid #027079;
+							box-shadow: -8px 8px 0 #027079;
+						}
+
+							.arrow-left {
+								position: absolute;
+								top: 30px;
+								left: -18px;
+								width: 0; 
+								height: 0; 
+								border-top: 10px solid transparent;
+								border-bottom: 10px solid transparent;
+								border-right: 10px solid #027079;
+							}
+
+							#tsc-box .pos {
+								font: italic 1em "Utopia Italic", serif;
+							}
+
+						.tsc:hover ~ #tsc-box {
+							display: block;
+						}
+
+					#wrapper {
+						margin: 10vh auto;
+						padding: 2em 4em 6em;
+					}
+
+					img.novas {
+						margin: 3em auto -7.7em;
+					}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrapper">
+			<h1>The Standard Candle</h1>
+			<p style="display: inline">We're <a href="http://benstanfield.io" target="_blank" class="ben">Ben</a> and <a href="http://jennyzhang.me" target="_blank" class="jen">Jenny</a>, a Los Angeles-based friendship turned design partnership.</p>
+			<div class="tsc">The Standard Candle</div>
+			<p style="display: inline">is our newest adventure, born after two years of design, code, and (bad) font jokes together in the <a href="http://iovine-young.usc.edu/" target="_blank">USC Iovine and Young Academy.</a></p>
+			<div id="tsc-box">
+				<div class="arrow-left"></div>
+				<span class="pos">(noun)</span> &middot; A standard candle is a supernova whose light is used to measure distance. Basically, a lighthouse in space. <img class="emoji" src="http://hassankhan.me/emojify.js/images/emoji/star2.png" alt="">
+			</div>
+			<p>Stay tuned for something great. <img src="http://hassankhan.me/emojify.js/images/emoji/sparkles.png" alt="" class="emoji"></p>
+			<img src="novas.png" class="novas" alt="">
+		</div>
+	</body>
+</html>
